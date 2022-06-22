@@ -34,6 +34,7 @@
                 <td>{{i.email}}</td>
                 <td>{{i.address}}</td>
                 <td>
+                    <a class="mx-2" href="{% url 'edit-todo' person_id=i.id %}"><i class="fa fa-edit"></i></a>
                     <a href="{% url 'delete-todo' person_id=i.id %}"><i class="fa fa-trash-alt"></i></a>
                 </td>
             </tr>
