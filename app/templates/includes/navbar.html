@@ -6,7 +6,10 @@
         <a style="font-weight: 700; font-size: 25px" href="{% url 'home' %}">Todo</a>
     </div>
     <ul class="nav-list">
-        <li><a href="/">About</a></li>
+        <li><a href="{% url 'select_tag' %}">Select tag</a></li>
+        <li><a href="{% url 'upload_file' %}">File </a></li>
+        <li><a href="{% url 'radio_input' %}">Radio </a></li>
+        <li><a href="{% url 'checkbox_input' %}">Checkbox</a></li>
         <li><a href="/">Contact us</a></li>
         <li><a href="/">FAQs</a></li>
     </ul>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Forms {% endblock title %}
+{% block css %}
+{% endblock css %}
+{% block content %}
+<div class="my-5 text-center">
+    <h4>Radio btn form</h4>
+    {% if msg %}
+    <p>{{msg}}</p>
+    {% endif %}
+</div>
+<div class="my-5">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="male" class="form-label">Male</label>
+            <input name="gender" value="1" type="radio" class="form-control-radio" id="male">
+
+            <label for="female" class="form-label">Female</label>
+            <input name="gender" value="0" type="radio" class="form-control-radio" id="female">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock content %}
+{% block js %}
+
+{% endblock js %}

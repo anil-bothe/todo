@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Forms {% endblock title %}
+{% block css %}
+{% endblock css %}
+{% block content %}
+<div class="my-5 text-center">
+    <h4>checkbox form</h4>
+    {% if msg %}
+    <p>{{msg}}</p>
+    {% endif %}
+</div>
+<div class="my-5">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <div class="form-check">
+                <input class="form-check-input" name="mylist" type="checkbox" value="0" id="flexCheckDisabled">
+                <label class="form-check-label" for="flexCheckDisabled">
+                    check list 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="mylist" type="checkbox" value="1" id="flexCheckCheckedDisabled">
+                <label class="form-check-label" for="flexCheckCheckedDisabled">
+                    check list 2
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" name="mylist" type="checkbox" value="2" id="adsf2">
+                <label class="form-check-label" for="adsf2">
+                    check list 3
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock content %}
+{% block js %}
+
+{% endblock js %}

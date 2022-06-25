@@ -6,3 +6,11 @@ class Person(models.Model):
     email = models.EmailField(null=True)
     address = models.TextField(null=True)
 
+
+    """ form : radio btn"""
+    # GENDER_BY = (
+    #     (0, "Female"),
+    #     (1, "male")
+    # )
+
+    # gender = models.IntegerField(choices=GENDER_BY)
