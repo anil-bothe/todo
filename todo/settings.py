@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'todo.urls'
 
 # can be danger.. !!
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 # CORS_ALLOWED_ORIGINS = []
 
 TEMPLATES = [
