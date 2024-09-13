@@ -4,7 +4,7 @@ from app.serializer import *
 
 
 class TodoViewSet(viewsets.ModelViewSet):
-    queryset = Todo.objects.all()
+    queryset = Todo.objects.all().order_by('-created_at')
     serializer_class = TodoSerializer
 
     def update(self, request, *args, **kwargs):
